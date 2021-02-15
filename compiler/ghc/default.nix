@@ -7,6 +7,7 @@
 
 # build-tools
 , bootPkgs
+, buildPackages
 , autoconf, automake, coreutils, fetchurl, fetchpatch, perl, python3, m4, sphinx, numactl
 , autoreconfHook
 , bash
@@ -324,6 +325,11 @@ stdenv.mkDerivation (rec {
     inherit (ghc.meta) license platforms;
   };
 
+  # Needed for `haddock` to work on source that includes non ASCII chars
+  LANG = "en_US.UTF-8";
+  LC_ALL = "en_US.UTF-8";
+} // lib.optionalAttrs (stdenv.buildPlatform.libc == "glibc") {
+  LOCALE_ARCHIVE = "${buildPackages.glibcLocales}/lib/locale/locale-archive";
 } // lib.optionalAttrs targetPlatform.useAndroidPrebuilt {
   dontStrip = true;
   dontPatchELF = true;

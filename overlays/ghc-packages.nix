@@ -63,10 +63,14 @@ let
       base         = "libraries/base";
       bytestring   = "libraries/bytestring";
       ghci         = "libraries/ghci";
+      ghc-bignum   = "libraries/ghc-bignum";
       ghc-boot     = "libraries/ghc-boot";
       ghc-heap     = "libraries/ghc-heap";
+      ghc-prim     = "libraries/ghc-prim";
       hpc          = "libraries/hpc";
+      integer-gmp  = "libraries/integer-gmp";
       libiserv     = "libraries/libiserv";
+      template-haskell = "libraries/template-haskell";
       iserv        = "utils/iserv";
       remote-iserv = "utils/remote-iserv";
       iserv-proxy  = "utils/iserv-proxy";

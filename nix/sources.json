@@ -6,10 +6,22 @@
         "homepage": "https://haskell.org/cabal",
         "owner": "haskell",
         "repo": "cabal",
-        "rev": "94aaa8e4720081f9c75497e2735b90f6a819b08e",
-        "sha256": "09m59w794zk4mxk1m3qkkmf5ydi0zhh89a7jk1wglrgxxadfndmh",
+        "rev": "48bf10787e27364730dd37a42b603cee8d6af7ee",
+        "sha256": "1v1g91k7dismrbxzahcabkyjs59giwgynss6jxq9lagqs1ywai2z",
         "type": "tarball",
-        "url": "https://github.com/haskell/cabal/archive/94aaa8e4720081f9c75497e2735b90f6a819b08e.tar.gz",
+        "url": "https://github.com/haskell/cabal/archive/48bf10787e27364730dd37a42b603cee8d6af7ee.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "cabal-34": {
+        "branch": "3.4",
+        "description": "Official upstream development repository for Cabal and cabal-install",
+        "homepage": "https://haskell.org/cabal",
+        "owner": "haskell",
+        "repo": "cabal",
+        "rev": "f39af1b67a65dc1bb1fe70e4f02a3e6635f5ee26",
+        "sha256": "06c7q1y1ggbgczg7f4s5zds16n8bkfkdzg7mr5sw9m6gzbhgcby8",
+        "type": "tarball",
+        "url": "https://github.com/haskell/cabal/archive/f39af1b67a65dc1bb1fe70e4f02a3e6635f5ee26.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "cardano-shell": {

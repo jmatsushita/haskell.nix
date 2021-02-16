@@ -2,7 +2,8 @@
   pkgs = hackage:
     {
       packages = {
-        "cryptohash-sha256".revision = (((hackage."cryptohash-sha256")."0.11.101.0").revisions).default;
+        "cryptohash-sha256".revision = (((hackage."cryptohash-sha256")."0.11.102.0").revisions).default;
+        "cryptohash-sha256".flags.use-cbits = true;
         "cryptohash-sha256".flags.exe = false;
         "binary".revision = (((hackage."binary")."0.8.6.0").revisions).default;
         "tar".revision = (((hackage."tar")."0.5.1.1").revisions).default;
@@ -13,7 +14,7 @@
         "stm".revision = (((hackage."stm")."2.5.0.0").revisions).default;
         "unix".revision = (((hackage."unix")."2.7.2.2").revisions).default;
         "mtl".revision = (((hackage."mtl")."2.2.2").revisions).default;
-        "network-uri".revision = (((hackage."network-uri")."2.6.3.0").revisions).default;
+        "network-uri".revision = (((hackage."network-uri")."2.6.4.1").revisions).default;
         "zlib".revision = (((hackage."zlib")."0.6.2.2").revisions).default;
         "zlib".flags.non-blocking-ffi = false;
         "zlib".flags.bundled-c-zlib = false;
@@ -41,6 +42,7 @@
         "base64-bytestring".revision = (((hackage."base64-bytestring")."1.2.0.1").revisions).default;
         "base".revision = (((hackage."base")."4.12.0.0").revisions).default;
         "time".revision = (((hackage."time")."1.8.0.2").revisions).default;
+        "th-compat".revision = (((hackage."th-compat")."0.1.1").revisions).default;
         "base16-bytestring".revision = (((hackage."base16-bytestring")."0.1.1.7").revisions).default;
         "transformers".revision = (((hackage."transformers")."0.5.6.2").revisions).default;
         "hashable".revision = (((hackage."hashable")."1.3.0.0").revisions).default;
